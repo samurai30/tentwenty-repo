@@ -1,0 +1,186 @@
+
+
+#homepage-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#home-right-container{
+    background: url('../images/header-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    #right-navbar{
+        position: fixed;
+        right: 3%;
+        top:4%;
+        width: 35em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 30%;
+        }
+        a{
+            width: 15%;
+            padding: 0;
+            margin: 0;
+            svg{
+                .login-path{
+                    
+                    animation: login 5s infinite ease-in-out;
+                    @keyframes login {
+                        from{
+                            stroke-dasharray: 100;
+                       
+                        }
+                        to{
+                            stroke-dasharray: 50;
+                         
+                        }
+                
+                    }
+                }
+                 
+            }
+          
+        }
+        
+        .search-bar-container-home{
+            border-bottom:1px solid whitesmoke;
+            opacity: 0.5;
+            width: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            i{
+              color: whitesmoke;
+              opacity: 0.5;
+            }
+            .search-bar{
+              padding: 10px;
+              font-size: 10px;
+              border: none;
+              background: transparent;
+              color: whitesmoke;
+              font-size: 1.5em;
+              overflow-x: hidden;
+              &:focus{
+                outline: none;
+                
+              }
+              &::placeholder{
+                color: whitesmoke;
+                font-size: 0.5em;
+                font-family: Arial, Helvetica, sans-serif;
+                opacity: 0.5;
+              }
+          }
+        }
+    }
+    #landing-screen-container{
+        height: 100%;
+        display: flex;
+        width: 40em;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: {
+            left: 15em;;
+        }
+        .landing-header{
+           
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            display: block;
+            font-size: 2.5em;
+            font-weight: lighter;
+        }
+        .landing-sub-header{
+            font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            font-size: small;
+            font-weight: lighter;
+            p{
+                width: 80%;
+            }
+            a{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                color: whitesmoke;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+        }
+    }
+}
+
+#home-left-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 30px;
+    z-index: 4;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    .row-header{
+        height: 33.33%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+ 
+}
+
+.sidenav-button {
+    z-index: 3;
+    height: 1em;
+    width: 3em;
+    background: transparent;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 1em;
+    transform-origin: center;
+    transform-box: fill-box;
+    transition: 0.2s;
+    &:hover{
+        transform: scale(1.1,1.1);
+    }
+    .line-bar-1{
+        height: 1px;
+        width: inherit;
+        background-color: #0072A0;
+        transition: all 1s ease-out;
+        transform-origin: center;
+        
+    }
+    .line-bar-2{
+        height: 1px;
+        width: inherit;
+        background-color: #0072A0;
+        transition: all 1s ease-out;
+        transform-origin: center;
+        
+    }
+
+}
+
+
+
+

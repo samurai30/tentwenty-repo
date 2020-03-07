@@ -1,0 +1,31 @@
+
+  
+#follower{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    pointer-events: none;
+    #circle{
+        position: absolute;
+        /* -webkit-animation: pulse 2s infinite; */
+        background: #3580f0;
+        border-radius: 50%;
+        height: 0.5em;
+        width: 0.5em;
+        margin-top: 0em;
+        margin-left: 0em;
+    }
+    #circle2{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background: #3580f0;
+        border-radius: 50%;
+        height: 0.5em;
+        width: 0.5em;
+        transition : box-shadow 0.5s,opacity 1s;
+    }
+}

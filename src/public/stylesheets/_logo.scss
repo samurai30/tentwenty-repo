@@ -1,0 +1,36 @@
+.logo-default-left{
+    width: 4em;
+    height: 4em;
+    z-index: 6;
+}
+.logo-default-right{
+    width: 7em;
+    height: 3em;
+    z-index: 6;
+}
+
+
+.logo{
+    position: fixed;
+    left: 1em;
+    top: 1em;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    transition: 1s;
+}
+
+.logo-white{
+    position: fixed;
+    z-index: 5;
+    left: 1em;
+    top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    opacity: 0;
+    transition: 1s;
+}

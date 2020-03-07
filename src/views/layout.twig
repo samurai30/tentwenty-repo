@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  </head>
+  <body>
+    {% include 'mouse_effect.twig' %}
+    {% include 'loader/index.twig' %}
+  
+    {% block body %}
+
+
+        
+    {% endblock %}
+    {% block footer %}
+      <section id="footer">
+        <div class="footer-left-logo">
+          <img src="/images/footer/dft-logo.png"/>
+        </div>
+        <div class="footer-forwards">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Watch</a></li>
+            <li><a>Speakers</a></li>
+          </ul>
+        </div>
+        <div class="footer-forwards">
+          <ul>
+            <li><a>Instagram</a></li>
+            <li><a>Facebook</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Linkedin</a></li>
+          </ul>
+        </div>
+        <div class="footer-news-letter">
+          <span>Subscribe to our newsletter</span>
+          <div class="footer-email-box">
+            <input type="text" placeholder="Email Address" name="email"/>
+            <span><i class="fa fa-arrow-right"></i></span>
+          </div>
+        </div>
+        <div class="footer-righ-logo">
+           <img src="/images/footer/logo-alt.png"/>
+          <img src="/images/footer/dft-gov.png"/>
+        </div>
+        
+      </section>
+
+      <div id="terms-condition">
+         <span class="term-condition-content">
+          <a href="#"><h4>Privacy Policy</h4></a>
+          <a href="#"><h4>Terms of Use</h4></a>
+          <a href="#"><h4>Dubai Future Talks©2020</h4></a>
+         </span>
+      </div>
+    {% endblock %}
+  
+    {% block javascripts %}
+      <script src="/javascripts/animejs.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="/javascripts/navbar.js"></script>
+      <script src="/javascripts/mouseEffect.js"></script>
+      <script src="/javascripts/loader.js"></script>
+      <script>
+       
+        $(document).ready(()=>{
+          document.body.removeChild($('#loader')[0])
+        })
+      </script>
+    {% endblock %}
+  </body>
+</html>

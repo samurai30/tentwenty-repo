@@ -1,0 +1,17 @@
+@import './navbar';
+@import './mouseEffect';
+@import './logo';
+@import './loader';
+@import './homepage';
+@import './footer';
+
+*{
+    cursor: none;
+}
+ 
+html,body{
+    margin: 0;
+    padding: 0;
+    background: #0a0a0a;
+}
+ 

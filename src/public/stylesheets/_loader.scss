@@ -1,0 +1,32 @@
+#loader{
+    background: black;
+    z-index: 10;
+    position: fixed;
+    top:0; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    #svg_logo{
+        position: relative;
+        height: 150px;
+        width: 200px;
+        
+    }
+    #svg_text{
+        height: 200px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        svg{
+            width: 8em;
+            height: auto;
+            margin-bottom: 0.2em;
+        }
+    }
+    
+}

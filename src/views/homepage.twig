@@ -1,0 +1,77 @@
+{% extends 'layout.twig' %}
+
+
+{% block body %}
+   {% include 'navbar/index.twig' %}
+   {% include 'logo/index.twig' %}
+  
+
+   <section id="homepage-container">
+   
+      <div id="home-left-container">
+         <div class="row-header">
+           
+         </div>
+         <div class="row-header">
+         <div class="sidenav-button hover-mouse open-navbar animated fadeInLeft">
+            <div class="line-bar-1"></div>
+            <div class="line-bar-2"></div>
+         </div>
+         </div>      
+         <div class="row-header">
+           
+         </div>
+      </div>
+       <div id="home-right-container">
+
+         <div id="right-navbar" class="animated fadeInRight">
+            <div class="search-bar-container-home hover-mouse">
+                <span><i class="fa fa-search"></i></span>
+                <input class="search-bar" type="text" placeholder="Search" name="search">
+            </div> 
+            <a href="#" class="hover-mouse">
+               <svg width="115px" height="48px" viewBox="0 0 115 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                     
+               <defs></defs>
+               <g id="login-group">
+               <path d="M18.5,23.25 L44.5,23.25" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+               <polygon id="Rectangle-2" class="login-path" fill="none" stroke="#FFFFFF" stroke-linecap="square" points="0 0 113 0 113 32.2939156 102.750556 45.7016681 0 45.7016681"></polygon>
+               <text id="Login" fill="#FFFFFF" font-family="Arial" font-size="14" font-weight="normal" line-spacing="14">
+                     <tspan x="56" y="27">Login</tspan>
+               </text>
+               </g>
+            </svg>
+            </a>
+            <img src="images/footer/dft-logo.png"/>
+         </div>
+         
+        <div id="landing-screen-container">
+           <div class="landing-header animated fadeInLeftBig"> 
+               <h2>
+                  Inspiring those 
+               </h2>
+               <h2>
+                  designing the future 
+               </h2>
+           </div>
+           <div class="landing-sub-header"> 
+               <p class="animated fadeIn">
+                  Dubai Future Talks gathers a global community of visionaries, change-makers, and pioneers. We believe in the strategic collaboration between the government and individuals to co-create the framework for the advancement of humanity.
+               </p>
+               <a href="#" class="hover-mouse animated fadeInLeft">
+              
+                   <svg width="115px" height="48px" viewBox="0 0 115 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                     
+                     <defs></defs>
+                       <path d="M18.5,23.25 L110.5,23.25" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+                     </svg>
+
+                  <span>Watch Video</span>
+               </a>
+           </div>
+        </div>
+      </div>
+   
+   </section>
+  
+{% endblock %}
